@@ -1,7 +1,7 @@
 # ランチの売り上げを計算するプログラム
 
 # モジュールの取り込み
-import sys,math
+import sys
 args = sys.argv
 
 # 引数の入力
