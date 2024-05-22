@@ -1,3 +1,5 @@
+#絶対値の計算を行うプログラム
+
 import sys
 args = sys.argv
 
