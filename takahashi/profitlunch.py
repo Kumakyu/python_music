@@ -24,7 +24,8 @@ for item in lunch_menu:
     cost = sales * item['Rate'] # 原価率をかける
     cost_round = Decimal(str(cost)).quantize(Decimal("0"),rounding=ROUND_HALF_UP) # 四捨五入
     profit = sales - cost_round # 粗利
-    total_sales += sales
+    # 合計値の計算
+    total_sales += sales 
     total_cost += cost_round
     total_profit += profit 
 
