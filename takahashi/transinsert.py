@@ -1,13 +1,13 @@
 # 交通費精算DB
 
-# import datetime    #モジュールごとのimportする記述
+#モジュールごとのimportする記述
 # from datetime import date
 import sys
 from database import session
 from tables import Transports
 
 # 引数の取得
-try:
+try: # 主キーが一致しないとき
     args = sys.argv
     input_date = int(args[1]) #日付
     input_seq = int(args[2]) #連番
@@ -31,7 +31,7 @@ try:
     session.commit()
     # 結果の出力
     print("交通費精算テーブルにデータを登録しました")
-except:
+except: # 主キーと一致したとき
     print("error:交通費精算テーブルにデータを登録できませんでした")
 
 
