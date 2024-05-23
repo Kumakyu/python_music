@@ -1,7 +1,7 @@
 # 交通費精算DB
 
 #モジュールごとのimportする記述
-# from datetime import date
+from datetime import date
 import sys
 from database import session
 from tables import Transports
