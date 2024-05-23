@@ -28,5 +28,6 @@ try:
     session.commit()
     print("交通費精算テーブルにデータを登録しました")
 
+#例外処理
 except:
     print("error:交通費精算テーブルにデータを登録できませんでした")
